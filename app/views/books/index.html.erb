@@ -13,3 +13,7 @@
 </span>
 
 <% end %>
+
+<% link_to "show", show_book_path(@book.id) %>
+<%= link_to "edit", edit_list_path(@book.id) %>
+<%= link_to "destroy", destroy_book_path(@book.id), method: :delete, "data-confirm" => "Are you sure?" %>
